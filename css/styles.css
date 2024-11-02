@@ -1,0 +1,262 @@
+:root {
+  /* COLOR SCHEME */
+  --first-color: #EEEFF1;
+  --second-color: #000;
+  --third-color: #34547A;
+  --fourth-color: #727272;
+  /* FONTS */
+  --font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  width: 1920px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+}
+
+.header {
+  background: var(--first-color);
+  padding-left: 400px;
+}
+.header h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 164%;
+  color: var(--second-color);
+  margin-bottom: 60px;
+}
+.header p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  color: var(--fourth-color);
+  width: 540px;
+}
+
+nav {
+  padding-top: 80px;
+}
+nav ul {
+  display: flex;
+  gap: 42px;
+}
+nav a {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  letter-spacing: 0.1em;
+  color: var(--second-color);
+}
+
+.header__description {
+  margin-top: 162px;
+}
+
+.header__description a {
+  margin-top: 84px;
+  color: var(--first-color);
+  padding: 20px 40px;
+  background: var(--third-color);
+  margin-bottom: 160px;
+}
+
+.about {
+  padding-top: 112px;
+  padding-bottom: 100px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about h2 {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: var(--second-color);
+  margin-bottom: 50px;
+}
+.about p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  text-align: center;
+  color: var(--fourth-color);
+  width: 540px;
+  margin-bottom: 100px;
+}
+
+.stats {
+  background: var(--third-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.stats ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.stats ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  color: var(--first-color);
+}
+.stats h3 {
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.stats p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.process h4 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: var(--second-color);
+}
+.process p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 164%;
+  text-align: center;
+  color: var(--fourth-color);
+  width: 540px;
+  margin-bottom: 60px;
+}
+.process img {
+  width: 1100px;
+  height: 600px;
+  margin-bottom: 100px;
+}
+.process .preview {
+  position: relative;
+}
+.process .play-btn {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 560px;
+}
+
+footer {
+  background: var(--third-color);
+  padding-left: 400px;
+}
+footer h5 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 21px;
+  color: var(--first-color);
+}
+footer p {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 164%;
+  color: var(--first-color);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 768px;
+  }
+  .header {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  nav {
+    padding-top: 20px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header__description {
+    text-align: center;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__description h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .header__description p {
+    width: 80vw;
+    font-size: 12px;
+  }
+  .header__description a {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .about {
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+  .about h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .about p {
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+  .stats {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .stats ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 32px 12px;
+  }
+  .process h4 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  .process p {
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+  .process img {
+    width: 75%;
+    height: 75%;
+    margin-bottom: 32px;
+  }
+  .process .play-btn {
+    margin-top: 280px;
+    scale: 60%;
+  }
+  footer {
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
